@@ -34,6 +34,7 @@ case node['platform_family']
       distribution "#{node['lsb']['codename']}/mongodb-org/stable"
       components node['mongodb3']['package']['repo']['apt']['components']
       keyserver node['mongodb3']['package']['repo']['apt']['keyserver']
+      key_proxy node['mongodb3']['package']['repo']['apt']['key_proxy']
       key node['mongodb3']['package']['repo']['apt']['key']
       action :add
     end

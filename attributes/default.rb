@@ -74,6 +74,7 @@ default['mongodb3']['package']['repo']['url'] = pkg_repo
 # MongoDB apt keyserver and key
 default['mongodb3']['package']['repo']['apt']['keyserver'] = apt_repo_keyserver
 default['mongodb3']['package']['repo']['apt']['key'] = '7F0CEB10'
+default['mongodb3']['package']['repo']['apt']['key_proxy'] = nil
 default['mongodb3']['package']['repo']['apt']['components'] = apt_repo_component
 
 # MongoDB package version to install
